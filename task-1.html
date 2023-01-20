@@ -4,79 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>document</title>
-<STYLE>
+    <title>Document</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+<style>
+
+
+body {
+    background-image: linear-gradient(30deg,green,lightgreen,darkgreen);
+}
+
+
+ 
 
 
 
-table,th,td {border: 2px solid black;border-collapse: collapse;
-                
-
+.main {
+font-size: 150%;
+margin-left: 10%;
+margin-right: 10%;
+margin-top: 10%;
+margin-bottom: 10%;
 
 }
-caption {
-
-    background: lightslategray;
+fieldset {
+    height: 25%;
+    width: 50%;
+    background: seagreen;
 }
-   
+legend {
+    border:2px solid black
+    
+}
+legend {
+    background: lightgreen;
+}
+
+button {background: blue;}
 
 
-</STYLE>
 
 
 
 
+</style>
 </head>
 <body>
-    <table align="center" height="150px" width="200px" cellspacing="10px" celpading="10px" >
-
-<caption style="border: 2px solid black;">HTML LAYOUT</caption>
-<thead>
-<tr>
-<th colspan="4"  bgcolor="purple">HEADER</th> 
-</tr>
-<tr>
-<th colspan="4" bgcolor="darkpink">NAV</th>
-</tr>
-
-
-
-</thead>
-<tbody>
-<tr>
-<td bgcolor="skyblue">SECTION</td>
-<td rowspan="4" bgcolor="yellow" align="CENTER">ASIDE</td>
-</tr>
-<tr>
-<td bgcolor="skyblue">ARTICLE</td>
-</tr>
+    <center>
+    <div class="main">
+    <fieldset align="center">
+<legend>log-in</legend>
+<form>
+<h1 align="center"><u>SIGN-UP-FORM</u></h1>
+<label><i class="fa-brands fa-google"></i></label>
+<input type="text" placeholder="SEARCH---">
+<input type="text" placeholder="w3school--">
+<button><i class="fa-solid fa-magnifying-glass"></i></button><br><br>
+<label for="unm">username</label>
+<input type="text" id="unm" placeholder="enter your name---"><br><br>
+<label for="pass">password</label>
+<input type="password" name="pas" id="pass" placeholder="enter your password--"><br><br>
+<button>sign-up</button><br><br>
+<h5><u><a href="D:\chirag tank\lecture-5 table\task-1.html" target="_blank">sign-up-form </a></u></h5>
+</form>
 
 
 
 
 
-</tbody>
-<tfoot>
-<tr>
-<td colspan="3" align="center" bgcolor="darkpink">FOOTER</td>
-
-</tr>
-
-
-
-</tfoot>
-
-
-
-
-
-
-
-
-
-
-
-
-    </table>
+    </fieldset>
+    </div>
+    </center>
 </body>
 </html>
