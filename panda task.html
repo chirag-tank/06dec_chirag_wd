@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+div {
+    position: relative;
+    height: 500px;
+    width: 80%;
+    background: lightslategray;
+    background-image: url(https://thumbs.dreamstime.com/z/village-life-india-25179399.jpg);
+    background-size: 100% 100%;   
+    left: 10px;
+    overflow: hidden;
+    transition: 1s;
+}
+div:hover {
+    cursor: wait;
+    left: 250px;
+    border: 10px solid black;
+}
+div1 {
+    position: absolute;
+    border: 2px solid black;
+    height: 500px;
+    width: 500px;
+    border: none;
+    left: 20%;
+    
+}
+div1:hover {
+    border: 10px solid red;
+    height: 450px;
+    width: 60%;
+    cursor: grab; 
+}
+    </style>
+</head>
+<body>
+    <div>
+        <div1></div1>
+    </div>
+</body>
+</html>
