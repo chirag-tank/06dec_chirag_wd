@@ -10,13 +10,55 @@ body {
     background-color: black;
     color: white;
 }
-
-
-
-
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    height: 700px;
+    position: relative;
+    background: white;
+}
+.layout{
+    width: 75%;
+    height: 300px;
+    position: relative;
+    margin: 20px 160px;
+    display: flex;
+    gap: 30px;
+    background: #fff;
+}
+.thumbnail{
+    border: 1px solid #dedede;
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+.thumbnail img {
+    width: 100%;
+    height: 60%;
+}
+.thumbnail p {
+    padding: 20px;
+    color: black;
+}
+.thumbnail .btn {
+    position: absolute;
+    margin-left: 15px;
+    width: 100px;
+    word-spacing: -5px;
+}
+.btn a {
+    border: 1px solid black;
+    text-decoration: none;
+    padding: 2px 5px 2px 5px;
+    color: black;
+}
     </style>
 </head>
-<body>
+<body>  
     <h1><center>chirag tank</center></h1>
     <h4><u><center>modul (css)-1</center></u></h4>
 <hr>
@@ -28,7 +70,8 @@ body {
         there are multiple level which ceates confusion for non-devloper and beginners. </dd>
         <hr>
 <h5><dl><dt>3.What is different beetween css2 and css3 ?</dt></dl></h5>
-<dd>ANS:-</dd>
+<dd>ANS:- css2 is cascading style sheet css provied by color,layout,background,border,font property.<br>
+          css3 is is cascading style sheets in level 3 and advance version of css and used to structuring ,styling ,and formatting of web page.  </dd>
 <HR>
 <h5><dl><dt>4.name a few css style componets ?</dt></dl></h5>
 <dd>ANS :-[1]Selector html element name,id name,class name
@@ -86,44 +129,63 @@ body {
 <dd>ANS:-RUL SET is contain one or more selecter and declaration .selector which in this example is h1 point to an html elememnt the decleration center style the element with the property and value.</dd>
 <hr>
 <h5><dl><dt>20.creat layout?</dt></dl></h5>
-<dd>ANS:-<table style="height: 80px;" width="3s00px">
-<caption></caption>
-<thead>
-<tr>
-    <th colspan="2" bgcolor="red">HEADER</th>
-</tr>
-<tr>
-    <th colspan="2" bgcolor="gray">NAV</th>
-</tr>
+<dd>ANS:-
+    <div class="header">
+     <div class="layout">
+     <div class="thumbnail">
+      <img src="https://cdn.pixabay.com/photo/2023/05/03/12/12/crete-7967497_1280.jpg" alt="pixabay">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat odit dignissimos</p>
+      <div class="btn">
+      <a href="#">view</a>
+      <a href="#">edit</a>
+      </div>
+     </div>
+     <div class="thumbnail">
+        <img src="https://cdn.pixabay.com/photo/2023/03/02/20/59/town-hall-tower-7826491_1280.jpg" alt="pixabay">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat odit dignissimos</p>
+        <div class="btn">
+        <a href="#">view</a>
+        <a href="#">edit</a>
+        </div>
+       </div>
+       <div class="thumbnail">
+        <img src="https://cdn.pixabay.com/photo/2023/05/21/20/21/meadowsweet-8009380_1280.jpg" alt="pixabay">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat odit dignissimos</p>
+        <div class="btn">
+        <a href="#">view</a>
+        <a href="#">edit</a>
+        </div>
+       </div>
+     </div>
+     <div class="layout">
+       <div class="thumbnail">
+        <img src="https://cdn.pixabay.com/photo/2023/05/17/08/55/tree-7999477_1280.jpg" alt="pixabay">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat odit dignissimos</p>
+        <div class="btn">
+        <a href="#">view</a>
+        <a href="#">edit</a>
+        </div>
+       </div>
+       <div class="thumbnail">
+        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" alt="pixabay">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat odit dignissimos</p>
+        <div class="btn">
+        <a href="#">view</a>
+        <a href="#">edit</a>
+        </div>
+       </div>
+       <div class="thumbnail">
+        <img src="https://cdn.pixabay.com/photo/2018/01/12/10/19/fantasy-3077928_1280.jpg" alt="pixabay">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat odit dignissimos</p>
+        <div class="btn">
+        <a href="#">view</a>
+        <a href="#">edit</a>
+        </div>
+       </div>
+     </div>
 
 
 
-</thead>
-<tbody>
-<tr>
-<td bgcolor="blue">section</td>
-<td bgcolor="lightgreen" rowspan="2">aside</td>
-
-
-
-</tr>
-<tr>
-    <td bgcolor="pink">article</td>
-</tr>
-<tfoot>
-<tr>
-<td colspan="4" align="center" bgcolor="yellow">footer</td>
-
-</tr>
-
-
-</tfoot>
-
-
-
-
-
-</tbody>
 
 
 
@@ -135,13 +197,8 @@ body {
 
 
 
-
-
-
-
-
-
-
-</table></dd>
+     </div>
+    </div>
+</dd>
 </body>
 </html>
